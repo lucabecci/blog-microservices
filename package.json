@@ -8,5 +8,17 @@
     "morgan": "^1.10.0",
     "redis": "^3.1.2",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/register": "^7.15.3"
+  },
+  "scripts": {
+    "start_core:realtime": "nodemon core.js --exec node_modules/.bin/babel-node",
+    "start_posts:realtime": "nodemon posts.js --exec node_modules/.bin/babel-node",
+    "start_profile:realtime": "nodemon profile.js --exec node_modules/.bin/babel-node"
   }
 }
